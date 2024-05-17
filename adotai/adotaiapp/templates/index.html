@@ -1,6 +1,10 @@
+{% load static %}
 <div>
     {%for ani in anim%}
     <p>{{ani.Nome}}</p>
-    <img src="{{ani.Img.url}}">
+    <p>{{ani.Idade}}</p>
+    <p>{{ani.Caracteristicas}}</p>
+
+    <img src="{{ani.Img}}">
     {% endfor %}
 </div>
