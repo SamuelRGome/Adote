@@ -1,1 +1,6 @@
-<h1>iae</h1>
+<div>
+    {%for ani in anim%}
+    <p>{{ani.Nome}}</p>
+    <img src="{{ani.Img.url}}">
+    {% endfor %}
+</div>
