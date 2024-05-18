@@ -1,10 +1,20 @@
 {% load static %}
-<div>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="{% static "style/styles.css" %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peludos Unipê</title>
+</head>
+<body>
     {%for ani in anim%}
-    <p>{{ani.Nome}}</p>
-    <p>{{ani.Idade}}</p>
-    <p>{{ani.Caracteristicas}}</p>
-
-    <img src="{{ani.Img}}">
-    {% endfor %}
-</div>
+    {% endfor %} 
+    <div class="quadrados">
+        <div id="quadrado">
+           <img src="{% static "imagens/emo.png" %}" alt="" id="gato">
+           <h1 id="nome">xereca</h1>
+           <p id="caracteristicas">Grande e Preta, Dar banho todo sábado</p>
+        </div>
+    </div>
+</body>
+</html>

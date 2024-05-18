@@ -1,0 +1,28 @@
+#quadrado{
+    height: 17em;
+    width: 15em;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#gato{
+    height: 8.5em;
+    width: 15em;
+    position: fixed;
+    border-radius: 0.4em;
+    position: absolute;
+    padding-top: 1px;
+}
+#nome{
+    align-items: center;
+    padding-top: 3.5em;
+    position: absolute;
+}
+
+#caracteristicas{
+    padding-top: 11em;
+    padding-left: 1em;
+}
