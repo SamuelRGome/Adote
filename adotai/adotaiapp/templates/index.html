@@ -3,19 +3,19 @@
 <head>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}"> 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peludos Unipê</title>
+    <meta name="viewport" rgb(184, 135, 72)content="width=device-width, initial-scale=1.0">
+    <title>Pelados Unipê</title>
 </head>
 <body>
-    {%for ani in anim%}
     <div class="quadrados">
-        <div id="quadrado">
-           <img src="{{ani.Img}}" alt="" id="gato">
-           <h1 id="nome">{{ani.Nome}}</h1>
-           <p id="caracteristicas">{{ani.Caracteristicas}}</p>
-
-            {% endfor %} 
-        </div>
+        {%for ani in anim%}
+        <div class="quadrado">
+           <img src="{{ani.Img}}" alt="" class="gato">
+           <h1 class="nome">{{ani.Nome}}</h1>
+           <h2 class="idade">{{ani.Idade}} Anos</h2>
+           <p class="caracteristicas">{{ani.Caracteristicas}}</p>
+        </div>    
+        {% endfor %} 
     </div>
 </body>
 </html>

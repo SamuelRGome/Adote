@@ -1,28 +1,42 @@
-#quadrado{
-    height: 17em;
-    width: 15em;
+body
+{
+    background-color: rgb(184, 135, 72);
+}
+.quadrados{
+    margin-left: 10%;
+    width: 80%;
+    background-color: #7c7c7c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+.quadrado{
+    background-color: antiquewhite;
+    margin: 3%;
+    width: 25%;
+    justify-content: space-between;
+    text-align: center;
     border-radius: .5rem;
     display: flex;
-    justify-content: center;
-    position: relative;
+    flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-#gato{
-    height: 8.5em;
+.gato{
     width: 15em;
-    position: fixed;
     border-radius: 0.4em;
-    position: absolute;
-    padding-top: 1px;
+    max-height: 75%;
+    width: 100%;
 }
-#nome{
+.nome{
     align-items: center;
-    padding-top: 3.5em;
-    position: absolute;
+    padding-top: 3.5px;
 }
 
-#caracteristicas{
-    padding-top: 11em;
+.caracteristicas{
     padding-left: 1em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3%;
 }

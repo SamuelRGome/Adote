@@ -1,15 +1,28 @@
-
-#quadrado{
+body
+{
+    background-color: rgb(184, 135, 72);
+}
+.quadrados{
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+    gap: 20px; 
+}
+.quadrado{
     height: 17em;
     width: 15em;
     border-radius: .5rem;
     display: flex;
-    justify-content: center;
-    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    flex: 1 1 calc(33.333% - 40px);
+    padding: 0 3% 2% 3%;
 }
 
-#gato{
+.gato{
     height: 8.5em;
     width: 15em;
     position: fixed;
@@ -17,13 +30,13 @@
     position: absolute;
     padding-top: 1px;
 }
-#nome{
+.nome{
     align-items: center;
     padding-top: 3.5em;
     position: absolute;
 }
 
-#caracteristicas{
+.caracteristicas{
     padding-top: 11em;
     padding-left: 1em;
 }
