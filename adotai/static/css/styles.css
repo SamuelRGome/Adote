@@ -1,25 +1,100 @@
 body
 {
-    background-color: rgb(184, 135, 72);
+    color:black;
+    background-color: #1d4528;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+    width: 100%;
+    color: #1d4528;
 }
+
+header
+{
+    justify-content: center;
+    text-align: center;
+    padding: 0 0.1% 0;
+    position: fixed;    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, .5); 
+    width: 100%;
+    background-color: rgb(240, 196, 146);
+    margin: none;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+header a
+{
+    text-decoration: none;
+    color: currentColor;
+}
+
+header h1
+{
+    margin-left: 1em;
+}
+header img 
+{
+    width: 2em;
+    height: 2em;
+}
+
+/*#####################################################*/
+.logo
+{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 4em;
+}
+.menu
+{
+    border-top: groove 1px #1d4528;
+    display: flex;
+    justify-content: center;
+    height: 2.5em;
+}
+.menu ul
+{ 
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 1.5em;
+    align-items: center;
+    width: 60%;
+}
+.menu li
+{
+    list-style-type: none;
+    transition: .2s;
+}
+.menu li:hover{
+    font-size: x-large;
+}
+/*#####################################################*/
 .quadrados{
-    margin-left: 10%;
-    width: 80%;
+    margin: 7.5em 0 0 10%;
+    margin-left: 5%;
+    width: 90%;
     background-color: #7c7c7c;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;    
+    justify-content: space-around;
 }
 .quadrado{
     background-color: antiquewhite;
     margin: 3%;
-    width: 25%;
-    justify-content: space-between;
+    width: 14em;
     text-align: center;
     border-radius: .5rem;
-    display: flex;
-    flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: 0.2s;
+}
+.quadrado:hover
+{
+    transform: scale(1.15);
 }
 
 .gato{
@@ -30,7 +105,6 @@ body
 }
 .nome{
     align-items: center;
-    padding-top: 3.5px;
 }
 
 .caracteristicas{
@@ -38,5 +112,4 @@ body
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-bottom: 3%;
 }
