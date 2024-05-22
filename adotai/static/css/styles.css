@@ -99,13 +99,14 @@ header img
 
 .gato{
     width: 15em;
-    height: 14em;
+    height: 12em;
     border-radius: 0.4em;
     max-height: 75%;
     width: 100%;
 }
 .nome{
     align-items: center;
+    justify-self: center;
 }
 
 .caracteristicas{
