@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from . import models
 # Create your views here.
-def index(request):
+def peludos(request):
     anim = models.pet.objects.all()
-    return render(request,'index.html', {'anim': anim})
+    return render(request,'peludos.html', {'anim': anim})
