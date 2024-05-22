@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.peludos, name='peludos'),
-    path('', views.out, name='out')
+    path('instagram', views.out, name='output')
 ]

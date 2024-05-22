@@ -10,7 +10,7 @@
     <div class="quadrados">
         {%for ani in anim%}
         <div class="quadrado">
-           <a href="{{views.out}}">
+           <a href="{%url 'output'%}" target="_blank">
            <img src="{{ani.Img}}" alt="" class="gato"></a>
            <h1 class="nome">{{ani.Nome}}</h1>
            <h2 class="idade">{{ani.Idade}} Anos</h2>
