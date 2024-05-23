@@ -313,8 +313,8 @@ section{
 .manual-navigation
 {
     position: absolute;
-    width: 55em;
-    margin-top: -30px;
+    width: 75em;
+    margin-top: -40px;
     display: flex;
     justify-content: center;
 }
@@ -365,8 +365,8 @@ section{
 }
 .navigation-auto{
     position: absolute;
-    width: 55em;
-    margin-top: 270px;
+    width: 75em;
+    margin-top: 170px;
     display: flex;
     justify-content: center;
 }
