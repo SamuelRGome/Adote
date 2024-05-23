@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" rgb(184, 135, 72)content="width=device-width, initial-scale=1.0">
+    <title>Peludos Unipê</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AdotaAí</h1>
+            <img src="../static/imagens/placeholder1.png" alt="">      
+        </div>
+        <nav class="menu">
+            <ul>
+                <a href="{%url 'index'%}"><li>Início</li></a>
+                <a href="{%url 'centralOngs'%}"><li>Central de ONGs</li></a>
+                <a href="{%url 'peludos'%}"><li>Peludos Unipe</li></a>
+                <a href="../templts/sobre.html"><li>Sobre</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="arroz"></div>
+    <div class="quadrados">
+        {%for ani in anim%}
+        <div class="quadrado">
+           <a href="{%url 'output'%}" target="_blank"><img src="{{ani.Img}}" alt="" class="gato"></a>
+           <div class="textos">
+                <h2 class="nome">{{ani.Nome}}</h2>
+                <h3 class="idade">{{ani.Idade}} Anos</h3>
+                <p class="caracteristicas">{{ani.Caracteristicas}}</p>
+           </div>
+        </div>    
+        {% endfor %}
+    </div>
+</body>
+</html>

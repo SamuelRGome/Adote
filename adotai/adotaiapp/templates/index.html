@@ -1,0 +1,198 @@
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poetsen+One&display=swap" rel="stylesheet">
+    <title>AdotaAi</title>
+    <link rel="stylesheet" href="{%static 'css/index.css'%}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AdotaAí</h1>
+            <img src="{% static 'imagens/placeholder1.png' %}" alt="">      
+        </div>
+        <nav class="menu">
+            <ul>
+                <a href="{%url 'index'%}"><li>Início</li></a>
+                <a href="{%url 'central'%}"><li>Central de ONGs</li></a>
+                <a href="{%url 'peludos'%}"><li>Peludos Unipe</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <div>
+            <div class="carrossel">
+                <div class="slider">
+                    <div class="slides">
+                        <!--Bolinhas-->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!--Fim Bolinhas-->
+            
+                        <!--Slide Imagens-->
+                        <div class="slide first">
+                            <img src="../static/imagens/placeholder2.png" alt="slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="../static/imagens/placeholder3.png" alt="slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="../static/imagens/placeholder2.png" alt="slide 3">
+                        </div>
+                        <div class="slide">
+                            <img src="../static/imagens/placeholder3.png" alt="slide 4">
+                        </div>
+                        <!--Fim Slides-->
+            
+                        <!--Navigation Auto-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                        <!--Fim Navigation Auto-->
+                    </div>
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="c1">
+            <div class="painel2">
+                <img src="https://www.petelegante.com.br/media/dicas/adoção-de-cachorro-filhote.jpg" alt="">
+            </div>
+            <div class="conteudo1">
+                <h1>Conheça o Adota Aí</h1>
+                <p>
+                    Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                    um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+                    ONGs e protetores parceiros Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                    um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+                    ONGs e protetores parceiros Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                    um pet com uma rede de maisonexão
+                </p>
+            </div>        
+        </div>
+
+        <div class="conteudo2">
+            <div class="c2texto">
+                <img src="../static/imagens/placeholder1.png" alt="">
+                <h2>Tema 1</h2>
+                <p>
+                    Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                    um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+                    ONGs e protetores parceiros
+                </p>
+            </div>
+            <div class="c2texto">
+                <img src="../static/imagens/placeholder1.png" alt="">
+                <h2>Tema 2</h2>
+                <p>
+                    Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                    um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+                    ONGs e protetores parceiros
+                </p>
+            </div>
+            <div class="c2texto">
+                <img src="../static/imagens/placeholder1.png" alt="">
+                <h2>Tema 3</h2>
+                <p>
+                    Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                    um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+                    ONGs e protetores parceiros
+                </p>
+            </div>
+            <div class="c2texto">
+                <img src="../static/imagens/placeholder1.png" alt="">
+                <h2>Tema 4</h2>
+                <p>
+                    Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                    um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+                    ONGs e protetores parceiros
+                </p>
+            </div>
+            <div class="c2texto">
+                <img src="../static/imagens/placeholder1.png" alt="">
+                <h2>Tema 3</h2>
+                <p>
+                    Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                    um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+                    ONGs e protetores parceiros
+                </p>
+            </div>
+            <div class="c2texto">
+                <img src="../static/imagens/placeholder1.png" alt="">
+                <h2>Tema 4</h2>
+                <p>
+                    Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                    um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+                    ONGs e protetores parceiros
+                </p>
+            </div>
+        </div>
+    </div>        
+    <div class="conteudo3">
+        <div class="c3texto">
+            <h1>Tema 4</h1>
+            <p>
+                Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+                ONGs e protetores parceiros Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+                ONGs e protetores parceiros Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de onexão entre quem deseja adotar 
+                um pet com uma rede de maisonexão entre quem deseja adotar um pet com uma rede de maismais de 100
+
+            </p>
+        </div>
+        <div class="c3video">
+            <video width="300" height="320" autoplay muted loop>
+                <source src="../static/vids/placeholder Horizontal.mp4" type="video/mp4">
+                <source src="../static/vids/placeholder Horizontal.mp4" type="video/ogg">
+                Seu navegador não suporta a tag de vídeo.
+              </video>
+        </div>
+    </div>
+    sc
+    <footer>
+        <div class="footerL">
+            <h1>AdotaAí</h1>
+            <img src="../static/imagens/placeholder1.png" alt="Foto">
+        </div>
+        <div class="footerR">
+            <div class="link">
+                <ul>
+                    <li><p><b>Endereços</b></p></li>
+                    <a href=""><li>Link Tree</li></a>
+                    <a href="https://rifa.digital/s/peludos82583"><li>Rifa</li></a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO5zbxHTF_7VVZeIPHoHmrWsVES-dtfVRGOhmUaT6blfWBgw/viewform"><li>Formulário de Adoção</li></a>
+                </ul>
+            </div>
+            <div class="Contatos">
+                <ul>
+                    <li><p><b>Endereços</b></p></li>
+                    <a href="https://www.instagram.com/peludosunipe/"><li>Instagram</li></a>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><p><b>Doação e Pix</b></p></li>
+                    <li>peludosunipe@hotmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
