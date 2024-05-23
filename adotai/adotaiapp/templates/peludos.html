@@ -1,4 +1,4 @@
-{% load static %}
+{%load static%}
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}"> 
@@ -17,22 +17,51 @@
                 <a href="{%url 'index'%}"><li>Início</li></a>
                 <a href="{%url 'central'%}"><li>Central de ONGs</li></a>
                 <a href="{%url 'peludos'%}"><li>Peludos Unipe</li></a>
-                
+                <a href="../templts/sobre.html"><li>Sobre</li></a>
             </ul>
         </nav>
     </header>
-    <div class="arroz"></div>
+
     <div class="quadrados">
-        {%for ani in anim%}
-        <div class="quadrado">
-           <a href="{%url 'output'%}" target="_blank"><img src="{{ani.Img}}" alt="" class="gato"></a>
-           <div class="textos">
-                <h2 class="nome">{{ani.Nome}}</h2>
-                <h3 class="idade">{{ani.Idade}} Anos</h3>
-                <p class="caracteristicas">{{ani.Caracteristicas}}</p>
-           </div>
-        </div>    
-        {% endfor %}
+        <h1>Pets disponíveis para adoção na Peludos Unipe</h1>
+        <section>
+            {%for ani in anim%}
+            <div class="quadrado">
+               <a href="{%url 'output'%}" target="_blank"><img src="{{ani.Img}}" alt="" class="gato"></a>
+               <div class="textos">
+                    <h2 class="nome">{{ani.Nome}}</h2>
+                    <h3 class="idade">{{ani.Idade}} Anos</h3>
+                    <p class="caracteristicas">{{ani.Caracteristicas}}</p>
+               </div>
+            </div>    
+            {% endfor %}     
+        </section>
+    </div>    
+<footer>
+    <div class="footerL">
+        <h1>AdotaAí</h1>
+        <img src="../static/imagens/placeholder1.png" alt="Foto">
     </div>
+    <div class="footerR">
+        <div class="link">
+            <ul>
+                <li><p><b>Endereços</b></p></li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO5zbxHTF_7VVZeIPHoHmrWsVES-dtfVRGOhmUaT6blfWBgw/viewform"><li>Formulário de Adoção</li></a>
+            </ul>
+        </div>
+        <div class="Contatos">
+            <ul>
+                <li><p><b>Endereços</b></p></li>
+                <a href="https://www.instagram.com/peludosunipe/"><li>Instagram</li></a>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><p><b>Doação e Pix</b></p></li>
+                <li>peludosunipe@hotmail.com</li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

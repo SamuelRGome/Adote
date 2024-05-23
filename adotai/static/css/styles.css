@@ -1,20 +1,19 @@
 body
 {
-    color:black;
-    background-color: #2f663e;
+    background-color: #1d4528;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 120%;
     width: 100%;
     color: #1d4528;
+    overflow-x: hidden;
 }
 
 header
 {
     justify-content: center;
     text-align: center;
-    padding: 0 0.1% 0;
     position: fixed;    
     box-shadow: 0px 4px 10px rgba(0, 0, 0, .5); 
     width: 100%;
@@ -24,17 +23,15 @@ header
     left: 0;
     z-index: 1000;
 }
-header a
+header a 
 {
     text-decoration: none;
+}
+footer a
+{
     color: currentColor;
 }
-
-header h1
-{
-    margin-left: 1em;
-}
-header img 
+.logo img 
 {
     width: 2em;
     height: 2em;
@@ -55,12 +52,13 @@ header img
     display: flex;
     justify-content: center;
     height: 2.5em;
+
 }
+
 .menu ul
 { 
     display: flex;
     justify-content: space-evenly;
-    margin-right: 1.5em;
     align-items: center;
     width: 60%;
 }
@@ -69,18 +67,29 @@ header img
     list-style-type: none;
     transition: .2s;
 }
-.menu li:hover{
-    font-size: x-large;
+.menu li:hover
+{
+    transform: scale(1.3);
+}
+.menu a
+{
+    color: currentColor;
+
 }
 /*#####################################################*/
 .quadrados{
-    margin: 7.5em 0 0 10%;
+    margin: 8em 0 0 10%;
     margin-left: 5%;
     width: 90%;
-    background-color: #7c7c7c;
-    display: flex;
+    background-color: rgb(240, 196, 146);
     flex-wrap: wrap;
     justify-content: center;
+    border-radius: 10px;
+}
+.quadrados h1
+{
+    padding-top: 1em;
+    text-align: center;
 }
 .quadrado{
     background-color: antiquewhite;
@@ -113,10 +122,74 @@ header img
 {
 
 }
+section .quadrado
+{
+    width: 17.5em;
+    height: 40%;
+}
 .caracteristicas{
     padding-left: 1em;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 10%;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em;
+}
+
+footer
+{
+    color: #1d4528;
+    min-height: 100px;
+    height: 20vh;
+    margin-top: 2em;
+    border-top: solid 1px black;
+    background-color: rgb(240, 196, 146);
+    display: flex;
+    width: 100%;
+}
+.footerL {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.footerL h1 {
+    margin: 0;
+    font-size: xx-large;
+}
+.footerL img {
+    width: 3em;
+    height: 3em;
+    margin-top: 10px;
+}
+.footerR {
+    display: flex;
+    margin-left: 14em;
+    justify-content: space-between;
+}
+.footerR li
+{
+    text-align: center;
+    list-style: none;
+}
+.link{
+
+}
+.contatos{
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    background-color: rgb(240, 196, 146);
+    border-radius: 10px;
 }
