@@ -279,7 +279,7 @@ section{
 {
     margin-top: 7.5em;
     width: 80%;
-    height: 210px;
+    height: 300px;
     overflow: hidden;
     border-radius: 10px;
     justify-content: center;
@@ -287,7 +287,7 @@ section{
 .slides
 {
     width: 400%;
-    height: 210px;
+    height: 300px;
     display: flex;
     overflow: hidden;
     
@@ -301,7 +301,7 @@ section{
     overflow: hidden;
     height: min-content;
     width: 25%;
-    height: 13em;
+    height: 300px;
     position: relative;
     
 }
@@ -314,7 +314,7 @@ section{
 {
     position: absolute;
     width: 75em;
-    margin-top: -40px;
+    margin-top: -30px;
     display: flex;
     justify-content: center;
 }
@@ -366,7 +366,7 @@ section{
 .navigation-auto{
     position: absolute;
     width: 75em;
-    margin-top: 170px;
+    margin-top: 270px;
     display: flex;
     justify-content: center;
 }
