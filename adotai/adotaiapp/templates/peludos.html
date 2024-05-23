@@ -25,13 +25,14 @@
     <div class="quadrados">
         {%for ani in anim%}
         <div class="quadrado">
-           <a href="{%url 'output'%}" target="_blank">
-           <img src="{{ani.Img}}" alt="" class="gato"></a>
-           <h1 class="nome">{{ani.Nome}}</h1>
-           <h2 class="idade">{{ani.Idade}} Anos</h2>
-           <p class="caracteristicas">{{ani.Caracteristicas}}</p>
+           <a href="{%url 'output'%}" target="_blank"><img src="{{ani.Img}}" alt="" class="gato"></a>
+           <div class="textos">
+                <h2 class="nome">{{ani.Nome}}</h2>
+                <h3 class="idade">{{ani.Idade}} Anos</h3>
+                <p class="caracteristicas">{{ani.Caracteristicas}}</p>
+           </div>
         </div>    
-        {% endfor %} 
+        {% endfor %}
     </div>
 </body>
 </html>
